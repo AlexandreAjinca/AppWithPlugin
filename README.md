@@ -8,4 +8,4 @@ Notre solution se présente en trois projets que sont AppWithPlugin, PluginBase 
 La class User se trouve dans le projet PluginBase. Ainsi, elle nous sert d'interface de base pour la gestion des utilisateus de notre solution. 
 
 ## Question 3:
-Selon la documentation, l’interface  d’un plugin  dans  notre système ressemble à une bibliothèque(class) dans laquelle on définit tous les types de données ou outils que l'on manipulera dans le système.
+Selon la documentation, l’interface  d’un plugin  dans  notre système ressemble à une bibliothèque(class) dans laquelle on définit tous les types de données ou outils que l'on manipulera dans l'ensemble du système.
