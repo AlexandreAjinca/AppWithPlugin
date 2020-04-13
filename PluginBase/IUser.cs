@@ -4,9 +4,9 @@ using System.Text;
 
 namespace PluginBase
 {
-    public interface User
+    public interface IUser
     {
-        string id { get; }
+        int id { get; }
         string first_name { get; }
         string last_name { get; }
         string email { get; }
