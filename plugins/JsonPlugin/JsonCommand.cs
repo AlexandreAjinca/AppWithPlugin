@@ -2,6 +2,7 @@
 using System;
 using Newtonsoft.Json;
 using System.IO;
+using System.Collections.Generic;
 
 namespace JsonPlugin
 {
@@ -10,18 +11,23 @@ namespace JsonPlugin
         public string Name { get => "json"; }
         public string Description { get => "Get users from Json source"; }
 
-        public int Execute()
+        public List<User> getUsers()
         {
+            List<User> result = new List<User>();
             string[] filePaths = Directory.GetFiles("../../../../users/");
             foreach(string s in filePaths){
                 using (StreamReader r = new StreamReader(s))
                 {
                     String json = r.ReadToEnd();
                     User u = JsonConvert.DeserializeObject<User>(json);
-                    Console.WriteLine(u);
+                    result.Add(u);
                 }
             }
-            return 0;
+            foreach(User user in result)
+            {
+                Console.WriteLine(user);
+            }
+            return result;
         }
     }
 }

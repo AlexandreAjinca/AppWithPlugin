@@ -22,7 +22,6 @@ namespace AppWithPlugin
                 string[] pluginPaths = new string[]
                 {
                     // Paths to plugins to load.
-                    @"plugins\HelloPlugin\bin\Debug\netcoreapp3.1\HelloPlugin.dll",
                     @"plugins\JsonPlugin\bin\Debug\netcoreapp3.1\JsonPlugin.dll"
                 };
 
@@ -53,7 +52,7 @@ namespace AppWithPlugin
                             return;
                         }
 
-                        command.Execute();
+                        command.getUsers();
 
                         Console.WriteLine();
                     }
