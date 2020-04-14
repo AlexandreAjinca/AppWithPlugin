@@ -6,7 +6,7 @@ Notre solution se présente en trois projets que sont AppWithPlugin, PluginBase 
 Pour chaque plugin qu'on voudra ajouter, on créera un nouveau projet.
 
 ## Question 2:
-La class User se trouve dans le projet PluginBase. Ainsi, elle permettra à chaque plugin de créer des utilisateurs. 
+La class User se trouve dans le projet PluginBase. Ainsi, elle permettra à chacun des plugins que l'on va ajouter de créer des utilisateurs étant donné que chaque classe plugin utilise PluginBase. 
 
 ## Question 3:
 Selon la documentation, l’interface  d’un plugin  dans  notre système ressemble à une bibliothèque(class) dans laquelle on définit tous les types de données ou outils que l'on manipulera dans l'ensemble du système.
