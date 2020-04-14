@@ -57,7 +57,7 @@ namespace AppWithPlugin
                         Console.WriteLine();
                     }
                 }
-
+                /*
                 //chargement de la liste d’utilisateurs
                 IEnumerable<IUser> users = pluginPaths.SelectMany(pluginPath =>
                 {
@@ -91,7 +91,7 @@ namespace AppWithPlugin
                         Console.WriteLine("Done");
                     }
                 }
-
+                 */
             }
             catch (Exception ex)
             {
