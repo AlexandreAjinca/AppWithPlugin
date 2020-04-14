@@ -22,7 +22,8 @@ namespace AppWithPlugin
                 string[] pluginPaths = new string[]
                 {
                     // Paths to plugins to load.
-                    @"HelloPlugin\bin\Debug\netcoreapp3.1\HelloPlugin.dll"
+                    @"HelloPlugin\bin\Debug\netcoreapp3.1\HelloPlugin.dll",
+                    @"JsonPlugin\bin\Debug\netcoreapp3.1\JsonPlugin.dll"
                 };
 
                 IEnumerable<ICommand> commands = pluginPaths.SelectMany(pluginPath =>

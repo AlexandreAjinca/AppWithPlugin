@@ -1,8 +1,7 @@
 {
   "profiles": {
     "AppWithPlugin": {
-      "commandName": "Project",
-      "commandLineArgs": "hello"
+      "commandName": "Project"
     }
   }
 }
