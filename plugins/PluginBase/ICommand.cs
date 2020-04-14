@@ -8,7 +8,6 @@ namespace PluginBase
     {
         string Name { get; }
         string Description { get; }
-
         int Execute();
     }
 }

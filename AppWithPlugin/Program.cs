@@ -22,8 +22,8 @@ namespace AppWithPlugin
                 string[] pluginPaths = new string[]
                 {
                     // Paths to plugins to load.
-                    @"HelloPlugin\bin\Debug\netcoreapp3.1\HelloPlugin.dll",
-                    @"JsonPlugin\bin\Debug\netcoreapp3.1\JsonPlugin.dll"
+                    @"plugins\HelloPlugin\bin\Debug\netcoreapp3.1\HelloPlugin.dll",
+                    @"plugins\JsonPlugin\bin\Debug\netcoreapp3.1\JsonPlugin.dll"
                 };
 
                 IEnumerable<ICommand> commands = pluginPaths.SelectMany(pluginPath =>
@@ -142,15 +142,15 @@ namespace AppWithPlugin
             }
         }
 
-        static IEnumerable<IUser> CreateUser(Assembly assembly)
+        static IEnumerable<User> CreateUser(Assembly assembly)
         {
             int count = 0;
 
             foreach (Type type in assembly.GetTypes())
             {
-                if (typeof(IUser).IsAssignableFrom(type))
+                if (typeof(User).IsAssignableFrom(type))
                 {
-                    IUser result = Activator.CreateInstance(type) as IUser;
+                    User result = Activator.CreateInstance(type) as User;
                     if (result != null)
                     {
                         count++;
