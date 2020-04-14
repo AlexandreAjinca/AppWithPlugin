@@ -57,41 +57,6 @@ namespace AppWithPlugin
                         Console.WriteLine();
                     }
                 }
-                /*
-                //chargement de la liste d’utilisateurs
-                IEnumerable<IUser> users = pluginPaths.SelectMany(pluginPath =>
-                {
-                    Assembly pluginAssembly = LoadPlugin(pluginPath);
-                    return CreateCommands(pluginAssembly);
-                }).ToList();
-
-                 if (args.Length == 0)
-                {
-                    Console.WriteLine("Users: ");
-                    foreach (IUser user in users)
-                    {
-                        Console.WriteLine($"{user.first_name}\t - {user.last_name}");
-                    }
-                }
-                else
-                {
-                    foreach (string userName in args)
-                    {
-                        Console.WriteLine($"-- {userName} --");
-
-                        IUser user = users.FirstOrDefault(aUser => aUser.first_name + " " +aUser.last_name == commandName);
-                        if (user == null)
-                        {
-                            Console.WriteLine("Pas d'utilisateur de ce type.");
-                            return;
-                        }
-
-                        user.AddUser();
-
-                        Console.WriteLine("Done");
-                    }
-                }
-                 */
             }
             catch (Exception ex)
             {
