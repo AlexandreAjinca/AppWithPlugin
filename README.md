@@ -2,7 +2,7 @@
 TP sur le plugin; Cours de développement avancé de logiciel
 
 ## Question 1:
-Notre solution se présente en trois projets que sont AppWithPlugin, PluginBase et le projet de gestion des sources de données à ajouter. Tous ces projets sont des projets .NET Core c'est des dire des frameworks sous forme de module.
+Notre solution se présente en trois projets que sont AppWithPlugin, PluginBase et le projet de gestion des sources de données à ajouter. Tous ces projets sont des projets .NET Core c'est à dire des frameworks sous forme de modules.
 Pour chaque plugin qu'on voudra ajouter, on créera un nouveau projet.
 
 ## Question 2:
